@@ -4,38 +4,33 @@ public class search {
 
 	public static void main(String[] args) {
 		int[] a=new int[100];
-		int i,n,s;
+		int i,n,search;
 		Scanner sc=new Scanner (System.in);
-		System.out.println("Enter limit:");
+		System.out.println("Enter the number of elements:");
 		n=sc.nextInt();
-		System.out.println("Enter the data:");
+		System.out.println("Enter the elements:");
 		for(i=1;i<=n;i++)
 		{
-			a[i]=sc.nextInt();			
+			a[i]=sc.nextInt();
 		}
-		System.out.println("Search:");
-		s=sc.nextInt();
+		System.out.println("Enter the element to searched:");
+		search=sc.nextInt();
 		for(i=1;i<=n;i++)
 		{
-			if(s==a[i])
+			if(search==a[i])
 			{
-				System.out.println(s+" Element found at "+i+" position");
+				System.out.println(search+" Element found at "+i+" position");
 				break;
 			}
 			if(i==n)
-				System.out.println("Elemnt not found");
+				System.out.println("Element not found");
 		}
 	}
 
 }
-###############################################################################################################################
-*OUTPUT*
-Enter limit:
-3
-Enter the data:
-2
-4
-5
-Search:
-4
-4 Element found at 2 position
+
+
+
+
+
+
